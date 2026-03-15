@@ -3,7 +3,7 @@
 Summary:	Promoting the interoperability of container objects (DIC, SL, etc.)
 Name:		php-%{pkgname}
 Version:	1.1.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/container-interop/container-interop/archive/%{version}/%{name}-%{version}.tar.gz
