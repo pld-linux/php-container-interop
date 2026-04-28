@@ -15,7 +15,7 @@ Requires:	php-symfony2-ClassLoader >= 2.7.7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_noautoreq_php		^/.*
+%define		_noautoreq_pear		^/.*
 
 %description
 container-interop tries to identify and standardize features in
