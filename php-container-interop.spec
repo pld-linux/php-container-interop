@@ -3,17 +3,19 @@
 Summary:	Promoting the interoperability of container objects (DIC, SL, etc.)
 Name:		php-%{pkgname}
 Version:	1.1.0
-Release:	2
+Release:	3
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/container-interop/container-interop/archive/%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	53c1d92cbfdf5e1ede5d173a41ea4b19
-Source1: 	autoload.php
+Source1:	autoload.php
 URL:		https://github.com/container-interop/container-interop
 Requires:	php(core) >= %{php_min_version}
 Requires:	php-symfony2-ClassLoader >= 2.7.7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_noautoreq_php		^/.*
 
 %description
 container-interop tries to identify and standardize features in
